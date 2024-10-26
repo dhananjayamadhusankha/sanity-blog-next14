@@ -11,6 +11,10 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#ec5444",
+      },
+      fontFamily: {
+        primaryFont: ["Montserrat", "sans-serif"],
       },
     },
   },

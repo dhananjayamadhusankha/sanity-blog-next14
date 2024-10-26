@@ -2,8 +2,8 @@ import { buildLegacyTheme } from "sanity";
 
 const props = {
   "--my-white": "#fff",
-  "--my-black": "#lalala",
-  "--papafam-brand": "#F7ABOA",
+  "--my-black": "#1a1a1a",
+  "--papafam-brand": "#F7AB0A", // Corrected hex color
   "--my-red": "#db4437",
   "--my-yellow": "#f4b400",
   "--my-green": "#0f9d58",
@@ -11,12 +11,12 @@ const props = {
 
 export const myTheme = buildLegacyTheme({
   /* Base theme colors */
-  "--black": props["--my-black"], // Removed space before square brackets
+  "--black": props["--my-black"],
   "--white": props["--my-white"],
   "--gray": "#666",
   "--gray-base": "#666",
 
-  "--component-bg": props["--my-black"], // Corrected syntax issue with square brackets
+  "--component-bg": props["--my-black"],
   "--component-text-color": props["--my-white"],
 
   /* Brand */
@@ -27,7 +27,7 @@ export const myTheme = buildLegacyTheme({
   "--default-button-primary-color": props["--papafam-brand"],
   "--default-button-success-color": props["--my-green"],
   "--default-button-warning-color": props["--my-yellow"],
-  "--default-button-danger-color": props["--my-red"], // Corrected a single dash for my-red
+  "--default-button-danger-color": props["--my-red"],
 
   /* State */
   "--state-info-color": props["--papafam-brand"],
@@ -39,5 +39,7 @@ export const myTheme = buildLegacyTheme({
   "--main-navigation-color": props["--my-black"],
   "--main-navigation-color--inverted": props["--my-white"],
 
-  "--focus-color": props["--papafam-brand"], // No issues here
+  "--focus-color": props["--papafam-brand"],
+
+  "--font-family-base": "Montserrat, sans-serif",
 });
